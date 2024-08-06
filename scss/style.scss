@@ -1,0 +1,13 @@
+@charset "utf-8";
+body{background-color: #fcc;}
+a{display: inline-block; text-decoration: none; color:inherit;}
+header{
+    position:fixed; width:100%;
+    .inner{padding: 0 100px;}
+    #logo{
+        a{width:100px; height:57px; border:1px solid #000;
+            background:url('..images/logo.png')no-repeat; }
+    }//end:#logo
+
+
+}//end:header
