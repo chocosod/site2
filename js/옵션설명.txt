@@ -1,0 +1,35 @@
+[[[[ScrollGiveClass 호출(실행)방법]]]]
+    
+    var [이름] = new ScrollGiveClass("[대상]",{옵션}); 
+    
+		- "var" or "let" or "const "
+		- [이름] : 적당히 아무이름 설정, 중복되면 안됨.
+		- [대상] : CSS선택자로 작성
+		- {옵션} : 필요없으면 생략가능, 메모장이나 플러그인의 주석내용 참조
+
+	(예)
+	var sgc1 = new ScrollGiveClass("#category");
+
+
+
+
+[[[[ScrollGiveClass 플러그인 옵션]]]]
+
+baseline :
+	  'top'(기본값) - 화면의 위를 기준으로 적용
+	  'bottom' - 화면의 아래를 기준으로 적용
+	  'middle' - 화면의 가운데를 기준으로 적용
+	  정수 - 적용되는 위치값을 직접설정
+
+class : 부여되는 클래스명
+	'scrolled'(기본값)
+
+add : baseline(기준)의 위치를 가감함
+	  정수 - 입력된 값만큼(px) 가감됨.
+	  실수(1>n>-1) - 입력된 값의 화면비만큼 값이 가감됨.
+
+addFunction : function(){}
+	- 클래스를 부여받을 때 함수를 호출함.
+
+removeFunction : function(){}
+	- 클래스가 제거될 때 함수를 호출함.

@@ -1,5 +1,12 @@
+html {
+  font-family: "Montserrat", "NanumBarunGothic", sans-serif;
+  font-size: 12px;
+}
+
 body {
   background-color: #fcc;
+  line-height: 1.6;
+  height: 3000px;
 }
 
 a {
@@ -11,13 +18,82 @@ a {
 header {
   position: fixed;
   width: 100%;
+  padding: 20px 0;
+  color: #fff;
 }
 header .inner {
   padding: 0 100px;
 }
+header a:hover {
+  color: #20bec6;
+}
+header #logo {
+  margin: 18px 50px 0 15px;
+  float: left;
+}
 header #logo a {
   width: 100px;
-  height: 57px;
-  border: 1px solid #000;
-  background: url("..images/logo.png") no-repeat;
+  height: 28px;
+  background: url("../images/logo.png") no-repeat;
+  background-size: 100% auto;
+  text-indent: -9999px;
+  transition: all 0.2s ease-in-out;
+}
+header #logo a:hover {
+  background-position: 0 bottom;
+}
+
+#gnb li {
+  float: left;
+  margin-top: 8px;
+}
+#gnb a {
+  width: 70px;
+  padding: 15px;
+  font-weight: bold;
+}
+#gnb a::after {
+  content: "";
+  display: block;
+  background: #fff;
+  height: 2px;
+  width: 0px;
+  transition: all 0.2s ease-in-out;
+}
+#gnb a:hover::after {
+  width: 100%;
+}
+#gnb:hover .sub {
+  display: block;
+}
+#gnb .sub {
+  display: none;
+  text-transform: uppercase;
+}
+#gnb .sub li {
+  float: none;
+  margin: 0 0 0 15px;
+}
+#gnb .sub a {
+  font-weight: normal;
+  padding: 0;
+  font-size: 10px;
+  white-space: nowrap;
+}
+#gnb .sub a::after {
+  display: none;
+}
+#gnb .sub a:hover {
+  text-decoration: underline;
+}
+
+#sns {
+  float: right;
+}
+#sns li {
+  float: left;
+  margin-top: 8px;
+}
+#sns a {
+  padding: 15px 5px;
 }
