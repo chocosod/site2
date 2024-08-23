@@ -25,73 +25,325 @@
             <div id="logo">
                 <h1><a href="#">디자인투플라이</a></h1>
             </div><!--end:#logo-->
-            <nav id="gnb">
+            <div id="btns"> <!--핸드폰 사이즈 반응형을 위해 새로 만듬.-->
                 <ul>
-                    <li><a href="#">ABOUT</a>
-                        <div class="sub">
-                            <ul>
-                                <li><a href="#">BRAND STORY</a></li>
-                                <li><a href="#">PROCESS</a></li>
-                            </ul>
-                        </div><!--end:.seb-->
+                    <li><a href="#" id="eve">
+                        <i class="xi-search xi-2x" ></i>
+                        <span>검색하기</span>
+                    </a>
                     </li>
-                    <li><a href="#">WORKS</a>
-                        <div class="sub">
-                            <ul>
-                                <li><a href="#">architecture</a></li>
-                                <li><a href="#">residence</a></li>
-                                <li><a href="#">commercial</a></li>
-                                <li><a href="#">medical</a></li>
-                                <li><a href="#">office</a></li>
-                            </ul>
-                        </div><!--end:.seb--></li>
-                    <li><a href="#">BRANDING</a>
-                        <div class="sub">
-                            <ul>
-                                <li><a href="#">logo</a></li>
-                                <li><a href="#">web</a></li>
-                                <li><a href="#">print</a></li>
-                                <li><a href="#">emblem</a></li>
-                            </ul>
-                        </div><!--end:.seb--></li>
-                    <li><a href="#">PRESS</a>
-                        <div class="sub">                            
-                        </div><!--end:.seb--></li>
-                    <li><a href="#">고객문의</a>
-                        <div class="sub">
-                            <ul>
-                                <li><a href="#">board</a></li>
-                                <li><a href="#">workstory</a></li>
-                            </ul>
-                        </div><!--end:.seb--></li>
-                    <li><a href="#">CONTACT</a>
-                        <div class="sub">
-                        </div><!--end:.seb--></li>
+                    <li><a href="#" class="open_menu">
+                        <i class="xi-bars xi-2x"></i><i class="xi-close xi-2x"></i>
+                        <span>전체<br>메뉴</span>
+                    </a>
+                    </li>
                 </ul>
-            </nav><!--end:#gnb-->
-            <div id="sns">
-                <ul>
-                    <li><a href=""><i class="xi-instagram xi-2x"></i></a></li>
-                    <li><a href=""><i class="xi-facebook xi-2x"></i></a></li>
-                    <li><a href=""><i class="xi-naver xi-2x"></i></a></li>
-                    <li><a href=""><i class="xi-search xi-2x"></i></a></li>
-                </ul>    
+            </div><!--end:.btns-->
+            <div class="menu">
+                
+                <nav id="gnb">
+                    <ul>
+                        <li><a href="#">ABOUT</a>
+                            <div class="sub">
+                                <ul>
+                                    <li><a href="#">BRAND STORY</a></li>
+                                    <li><a href="#">PROCESS</a></li>
+                                </ul>
+                            </div><!--end:.seb-->
+                        </li>
+                        <li><a href="#">WORKS</a>
+                            <div class="sub">
+                                <ul>
+                                    <li><a href="#">architecture</a></li>
+                                    <li><a href="#">residence</a></li>
+                                    <li><a href="#">commercial</a></li>
+                                    <li><a href="#">medical</a></li>
+                                    <li><a href="#">office</a></li>
+                                </ul>
+                            </div><!--end:.seb--></li>
+                        <li><a href="#">BRANDING</a>
+                            <div class="sub">
+                                <ul>
+                                    <li><a href="#">logo</a></li>
+                                    <li><a href="#">web</a></li>
+                                    <li><a href="#">print</a></li>
+                                    <li><a href="#">emblem</a></li>
+                                </ul>
+                            </div><!--end:.seb--></li>
+                        <li><a href="#">PRESS</a>
+                            <div class="sub">                            
+                            </div><!--end:.seb--></li>
+                        <li><a href="#">고객문의</a>
+                            <div class="sub">
+                                <ul>
+                                    <li><a href="#">board</a></li>
+                                    <li><a href="#">workstory</a></li>
+                                </ul>
+                            </div><!--end:.seb--></li>
+                        <li><a href="#">CONTACT</a>
+                            <div class="sub">
+                            </div><!--end:.seb--></li>
+                    </ul>
+                </nav><!--end:#gnb-->
+                <div id="sns">
+                    <ul>
+                        <li><a href=""><i class="xi-instagram xi-2x"></i></a></li>
+                        <li><a href=""><i class="xi-facebook xi-2x"></i></a></li>
+                        <li><a href=""><i class="xi-naver xi-2x"></i></a></li>
+                     
+                    </ul>    
+                </div>
             </div>
-        </div><!--end:.inner-->
-        
+        </div><!--end:.inner-->        
     </header>
-    <main>
+    <aside id="search">
+        <div class="inner">
+            <form >
+                <input type="text" placeholder="Search.."/>
+                <p>검색을 할땐 엔터를 누르고, 닫으려면
+                    <span>ESC키를 누르거나</span> X를 눌러주세요.</p>
+            </form>
+        </div>
+        <a class="close_search"><i class="xi-close xi-x"></i></a>
+    </aside><!--end:#serch-->
+
+    <main>        
         <section id="main_view">
             <div class="slider">
-                <article class="view view1"></article>
-                <article class="view view2"></article>
-                <article class="view view3"></article>
+                <article class="view view1">
+                    <div class="text">
+                        <h3>워크앤드 상가주택</h3>
+                        <p>Residence/ 주거공간인테리어</p>
+                        <a href="#">READ MORE<i class="xi-angle-right"></i></a>
+                    </div>
+                </article>
+                    <article class="view view2">
+                    <div class="text">
+                        <h3>카페 올소 also</h3>
+                        <p>Commercial/ 카페 인테리어</p>
+                        <a href="#">READ MORE<i class="xi-angle-right"></i></a>
+                    </div>
+                </article>
+                    <article class="view view3">
+                    <div class="text">
+                        <h3>워크앤드 상가주택</h3>
+                        <p>Residence/ 주거공간인테리어</p>
+                        <a href="#">READ MORE<i class="xi-angle-right"></i></a>
+                    </div>
+                </article>
                 <article class="view view4"></article>
                 <article class="view view5"></article>
                 <article class="view view6"></article>
             </div><!--end:.slider-->
+            <div class="pager">               
+            </div><!--end:.pager-->
         </section><!--end:#main_view-->
+        <section id="works">
+            <h3><a href="#">works</a></h3>
+            <ul class="list">
+                <li><a href="#">
+                    <h4>피부를 연구하는 피부샵, 리겐 에스테틱</h4>
+                    <p><i class="xi-paper-o"></i> commercial, works</p>
+                </a></li>
+                <li><a href="#">
+                    <h4>전주 프리미엄 하우스 안경 브랜드 편집숍, 그루브안경원</h4>
+                    <p><i class="xi-paper-o"></i> commercial, works</p>
+                </a></li>
+                <li><a href="#">
+                    <h4>반려견 동반 스테이 “메종드시고르”</h4>
+                    <p><i class="xi-paper-o"></i> residence, works</p>
+                </a></li>
+                <li><a href="#">
+                    <h4>멋짐을 추구하는 헬스장, 짐멋</h4>
+                    <p><i class="xi-paper-o"></i> commercial, works</p>
+                </a></li>
+                <li><a href="#">
+                    <h4>부안을 품은, 편안함이 느껴지는 아리울떡공방</h4>
+                    <p><i class="xi-paper-o"></i> cafe & bakery commercial, works</p>
+                </a></li>
+                <li><a href="#">
+                    <h4>간격과 간격 사이, 우평옥우</h4>
+                    <p><i class="xi-paper-o"></i> commercial, works</p>
+                </a></li>
+                <li><a href="#">
+                    <h4>한옥스테이 “세렌디피아”</h4>
+                    <p><i class="xi-paper-o"></i> residence, works</p>
+                </a></li>
+                <li><a href="#">
+                    <h4>온전한 쉼을 느낄 수 있는 집</h4>
+                    <p><i class="xi-paper-o"></i> residence, works</p>
+                </a></li>
+                <li><a href="#">
+                    <h4>네 가지 색(四色)의 사색(思索)의 공간 “하정사색”</h4>
+                    <p><i class="xi-paper-o"></i> residence, works</p>
+                </a></li>
+                <li><a href="#">
+                    <h4>전통과 현대를 어우르는, 이화동산</h4>
+                    <p><i class="xi-paper-o"></i> commercial, works</p>
+                </a></li>
+                <li><a href="#">
+                    <h4>이탈리아 포카치아를 맛볼 수 있는 색다른 카페</h4>
+                    <p><i class="xi-paper-o"></i> commercial, works</p>
+                </a></li>
+                <li><a href="#">
+                    <h4>이탈리아 포카치아를 맛볼 수 있는 색다른 카페</h4>
+                    <p><i class="xi-paper-o"></i> commercial, works</p>
+                </a></li>
+            </ul>
+            <a href="#" class="more">WORKS MORE..</a>
+        </section><!--end:#works-->
+        <section id="about">
+            <div class="inner">
+                <h3>ABOUT DESIGNTWOPLY</h3>
+                <p>항상 지켜봐 주시고 응원해주시고, 소중한 인연이 되어주신 모든 
+                    클라이언트 분들께 다시 한번 감사드립니다. 앞으로도 기대에 
+                    어긋나지 않는 디자인투플라이가 되기 위해 열심히 노력하겠습니다.</p>
+                <a href="#">ABOUT DESIGNTWOPLY<i class="xi-long-arrow-right"></i></a>
+            </div><!--end:.inner-->
+        </section><!--end:#about-->
+        <section id="press">
+            <h3><a href="#">PRESS</a></h3>
+            <div class="inner">
+                <ul class="slider">
+                    <li class="item">
+                        <div class="box">
+                            <p><img src="images/press/p01.jpg" alt=""></p>
+                            <h4>데코저널 DECO JOURNAL 2018.11</h4>
+                            <p><i class="xi-paper-o"></i>press</p>
+                        </div><!--end.box-->
+                    </li>
+                    <li class="item">
+                        <div class="box">
+                            <p><img src="images/press/p02.jpg" alt=""></p>
+                            <h4>데코저널 DECO JOURNAL 2018.11</h4>
+                            <p><i class="xi-paper-o"></i>press</p>
+                        </div><!--end.box-->
+                    </li>
+                    <li class="item">
+                        <div class="box">
+                            <p><img src="images/press/p03.jpg" alt=""></p>
+                            <h4>데코저널 DECO JOURNAL 2018.11</h4>
+                            <p><i class="xi-paper-o"></i>press</p>
+                        </div><!--end.box-->
+                    </li>
+                    <li class="item">
+                        <div class="box">
+                            <p><img src="images/press/p04.jpg" alt=""></p>
+                            <h4>데코저널 DECO JOURNAL 2018.11</h4>
+                            <p><i class="xi-paper-o"></i>press</p>
+                        </div><!--end.box-->
+                    </li>
+                    <li class="item">
+                        <div class="box">
+                            <p><img src="images/press/p05.jpg" alt=""></p>
+                            <h4>데코저널 DECO JOURNAL 2018.11</h4>
+                            <p><i class="xi-paper-o"></i>press</p>
+                        </div><!--end.box-->
+                    </li>
+                    <li class="item">
+                        <div class="box">
+                            <p><img src="images/press/p06.jpg" alt=""></p>
+                            <h4>데코저널 DECO JOURNAL 2018.11</h4>
+                            <p><i class="xi-paper-o"></i>press</p>
+                        </div><!--end.box-->
+                    </li>
+                    <li class="item">
+                        <div class="box">
+                            <p><img src="images/press/p07.jpg" alt=""></p>
+                            <h4>데코저널 DECO JOURNAL 2018.11</h4>
+                            <p><i class="xi-paper-o"></i>press</p>
+                        </div><!--end.box-->
+                    </li>
+                    <li class="item">
+                        <div class="box">
+                            <p><img src="images/press/p08.jpg" alt=""></p>
+                            <h4>데코저널 DECO JOURNAL 2018.11</h4>
+                            <p><i class="xi-paper-o"></i>press</p>
+                        </div><!--end.box-->
+                    </li>
+                    <li class="item">
+                        <div class="box">
+                            <p><img src="images/press/p09.jpg" alt=""></p>
+                            <h4>데코저널 DECO JOURNAL 2018.11</h4>
+                            <p><i class="xi-paper-o"></i>press</p>
+                        </div><!--end.box-->
+                    </li>
+                    <li class="item">
+                        <div class="box">
+                            <p><img src="images/press/p10.png" alt=""></p>
+                            <h4>데코저널 DECO JOURNAL 2018.11</h4>
+                            <p><i class="xi-paper-o"></i>press</p>
+                        </div><!--end.box-->
+                    </li>
+                    <li class="item">
+                        <a href="#" class="more">PRESS MORE
+                        <i class="xi-long-arrow-right"></i></a>
+                    </li>
+                </ul>
+                <div class="dot"></div>
+            </div><!--end:.inner-->
+        </section><!--end:#press-->
+        <section id="partners">
+            <h3>PARTNERS</h3>
+            <ul>
+                <li><img src="images/partners/01.jpg" alt=""></li>
+                <li><img src="images/partners/02.jpg" alt=""></li>
+                <li><img src="images/partners/03.jpg" alt=""></li>
+                <li><img src="images/partners/04.jpg" alt=""></li>
+                <li><img src="images/partners/05.jpg" alt=""></li>
+                <li><img src="images/partners/06.jpg" alt=""></li>
+                <li><img src="images/partners/07.jpg" alt=""></li>
+                <li><img src="images/partners/08.jpg" alt=""></li>
+                <li><img src="images/partners/09.jpg" alt=""></li>
+                <li><img src="images/partners/10.jpg" alt=""></li>
+                <li><img src="images/partners/11.jpg" alt=""></li>
+                <li><img src="images/partners/12.jpg" alt=""></li>
+                <li><img src="images/partners/13.jpg" alt=""></li>
+                <li><img src="images/partners/14.jpg" alt=""></li>
+                <li><img src="images/partners/15.jpg" alt=""></li>
+                <li><img src="images/partners/16.jpg" alt=""></li>
+                <li><img src="images/partners/17.jpg" alt=""></li>
+                <li><img src="images/partners/18.jpg" alt=""></li>
+                <li><img src="images/partners/19.jpg" alt=""></li>
+                <li><img src="images/partners/20.jpg" alt=""></li>
+                <li><img src="images/partners/21.jpg" alt=""></li>
+                <li><img src="images/partners/22.jpg" alt=""></li>
+                <li><img src="images/partners/23.jpg" alt=""></li>
+                <li><img src="images/partners/24.jpg" alt=""></li>
+                <li><img src="images/partners/25.jpg" alt=""></li>
+                <li><img src="images/partners/26.jpg" alt=""></li>
+                <li><img src="images/partners/27.jpg" alt=""></li>
+            </ul>
+        </section><!--end:partner-->
     </main>
+    <footer>
+        <div class="inner">
+            <div class="logo">
+                <h1><img src="images/btm-logo.png" alt="디자인투플라이"></h1>
+            </div><!--end:.logo-->
+            <div class="info">
+                <dl>
+                    <dt>JEONJU</dt>
+                    <dd>634-7, Junghwasan-dong 2-ga, Wansan-gu, Jeonju-si, Jeollabuk-do, Korea</dd>
+                    <dd>designtwoply@naver.com</dd>
+                    <dd>Tel : 070-4120-2678</dd>
+                    <dd>Fax : 063-232-2679</dd>
+                </dl>
+            </div>
+            <div class="info">
+                <dl>
+                    <dt>DAEGU</dt>
+                    <dd>14, Muhak-ro 21an-gil, Suseong-gu, Daegu, Korea</dd>
+                    <dd>designtwoply@naver.com</dd>
+                    <dd>Tel : 053-295-2915</dd>
+                    <dd>Fax : 053-295-2916</dd>
+                </dl>
+            </div>
+        </div><!--end:.inner-->
+        <div class="copyright">
+            <p>Copyright &copy; 디자인투플라이 All Rights Reserved.</p>
+        </div>
+    </footer>
     <!--외부 스크립트(플러그인) 연결-->
     <script src="js/ScrollGiveClass.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
